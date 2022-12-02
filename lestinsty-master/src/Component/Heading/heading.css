@@ -1,0 +1,20 @@
+.headingContent {
+  padding: 50px 15px;
+  max-width: 1300px;
+  margin: 0px auto;
+  padding-bottom: 0px;
+}
+
+.heading {
+  font-size: 2.1rem;
+  color: rgb(31, 30, 30);
+  /* text-align: center; */
+  text-decoration: underline var(--red);
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}

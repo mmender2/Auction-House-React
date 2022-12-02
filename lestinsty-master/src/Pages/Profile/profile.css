@@ -1,0 +1,244 @@
+.profielContainer {
+  /* max-width: 1300px; */
+  margin: 0px auto;
+}
+
+@media (min-width: 1500px) {
+  .profielContainer {
+    max-width: 1300px;
+    margin: 0px auto;
+  }
+}
+/* personal  */
+
+.prInfoBox {
+  width: 90%;
+  box-shadow: 0px 0px 5px rgb(236, 235, 235);
+  /* border: 1px solid rgb(240, 239, 239); */
+  border-radius: 10px;
+  padding: 30px 0px;
+  padding-top: 10px;
+  text-align: center;
+  margin: 0px auto;
+}
+.linkBtn {
+  text-align: end !important;
+  /* display: flex ; */
+  /* justify-content: flex-end ; */
+  padding: 0px 10px;
+}
+
+.linkBtn button {
+  text-transform: capitalize !important;
+}
+.userImg {
+  width: 180px;
+  height: 180px;
+  margin: 0px auto;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid gainsboro;
+}
+.iconBtn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  bottom: 0px;
+  right: 30px;
+  cursor: pointer;
+  /* border: 3px solid black; */
+  background-color: var(--red);
+  border-radius: 50%;
+  padding: 3px 5px;
+  /* width: 15px; */
+  /* height: 15px; */
+}
+.iconBtn svg{
+  color: rgba(255, 255, 255, 0.918);
+}
+.userImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.prName {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.upldBtns {
+  margin-top: 20px;
+}
+.upldBtns button {
+  margin: 0px 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.prInfoList {
+  list-style: none;
+  text-align: start;
+  margin-top: 30px;
+}
+.prInfoList li {
+  font-size: 0.9rem;
+  padding: 12px 30px;
+  /* border-bottom: 1px solid rgb(240, 239, 239); */
+}
+
+.prInfoList li:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.prInfoList li:nth-of-type(1) {
+  /* border-top: 1px solid var(--red); */
+  border-top: 1px solid rgb(240, 239, 239);
+}
+.prInfoList li:hover {
+  background-color: rgb(245, 246, 248);
+  cursor: pointer;
+}
+
+.profielContainer .Mui-selected {
+  color: var(--red) !important;
+}
+.MuiTabs-indicator {
+  background-color: var(--red) !important;
+}
+
+.userInp {
+  padding: 14px;
+  border: 1px solid gainsboro;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 5px;
+}
+.disabledInp {
+  opacity: 0.5;
+  border: 1px solid white;
+  background-color: gainsboro;
+}
+
+.tabPanelPrifle {
+  width: 80%;
+}
+
+.hfWdLi {
+  display: flex;
+  justify-content: space-between;
+}
+.hfWdInfo {
+  width: 49%;
+}
+
+.csImg{
+  width: 100%;
+}
+.tabLogo{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+.tabLogo img{
+  width: 100%;
+}
+
+/* .tabsContainerMain{
+  min-height: 100vh;
+} */
+
+.opnNavProfile,.closePrifleNav{
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .tabLogo{
+    display: none;
+  }
+  .hfWdLi {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+  }
+  .hfWdInfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* .MuiTabs-flexContainer {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+  .MuiTab-root {
+    flex-direction: column !important;
+    font-size: 0.8rem !important;
+    text-transform: capitalize !important;
+  }
+  .MuiTabs-root {
+    padding: 0px !important;
+    min-height: 100% !important;
+  } */
+  .tabsContainerMain{
+    width: 280px;
+    position: relative;
+  }
+  .tabsSideBar{
+    min-height: 100vh !important;
+    position: fixed;
+    background-color: white !important;
+    width: 280px !important;
+    z-index: 9099;
+    top: 0px;
+    transition: .3s;
+  }
+  .hideProfileNav{
+    transform: translateX(-100vw);
+  }
+  .showProileNav{
+    transform: translateX(0vw);
+
+  }
+  .opnNavProfile{
+    text-align: start;
+    padding: 20px;
+    display: block;
+  }
+  .closePrifleNav{
+    display: block;
+    position: fixed;
+    top: 10px;
+    /* right: -60px; */
+    left: 280px;
+    /* background-color: red; */
+    z-index: 10000;
+    transform: translateX(-100vw);
+    transition: .3s;
+
+  }
+  .animCloseNav{
+    /* display: none; */
+    transform: translateX(0vw);
+
+  }
+  .tabPanelPrifle,
+  .prInfoBox {
+    width: 100%;
+  }
+  .prIfIcon {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+    .MuiTab-root {
+        font-size: 0.7rem !important;
+      }
+      .closePrifleNav{
+        left: 215px;
+      }
+}

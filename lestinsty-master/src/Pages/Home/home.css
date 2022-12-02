@@ -1,0 +1,228 @@
+
+.itemContainer{
+    position: relative;
+    margin-top: 100px;
+    height: 100%;
+    max-width: 1250px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+.itmContent{
+    
+    display: flex;
+    /* align-items: flex-start; */
+}
+/* filter  */
+
+.fltrContainer{
+    width: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(220, 220, 220, 0.774);
+    padding: 30px 20px;
+    /* margin: 20px auto; */
+    position: sticky;
+    top: 80px;
+    background-color: white;
+    z-index: 9;
+    min-height: 100vh;
+}
+
+.fltrBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+} 
+.fltrFild{
+    width: 100%;
+    margin: 20px 0px;
+}
+.MuiOutlinedInput-notchedOutline{
+    /* border: 2px solid var(--red) !important; */
+    color: var(--red);
+}
+
+
+/* banner  */
+.bannerContainer{
+  max-width: 1300px;
+  margin: 0px auto;
+  margin-top: 90px;
+}
+
+
+.bannerContainer .swiper {
+    width: 100%;
+    /* height: 250px; */
+    max-height: 300px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .bannerContainer .swiper-slide img {
+    /* display: block; */
+    width: 100%;
+    height: 300px;
+    /* max-width: 100vw; */
+    object-fit: cover;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    color: var(--red);
+  }
+  
+
+  /* category  */
+
+  .ctgContent{
+    max-width: 1300px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+  }
+
+  .ctgCard{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: rgba(248, 190, 190, 0.363);
+    /* background-color: var(--red); */
+    padding: 12px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .ctgCard:hover{
+    transform: scale(1.05);
+  }
+  .ctgCard img{
+    width: 100%;
+    height: 120px;
+    border-radius: 50% 50% 50% 50%;
+    /* object-fit: cover; */
+  }
+  .ctgName{
+    text-align: center;
+    /* text-decoration: underline; */
+    /* color: var(--red); */
+    /* padding: 3px; */
+    color: rgb(39, 38, 38);
+  }
+
+  /* feature card  */
+
+  .ftrContent{
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0px 15px;
+  }
+  .ftrCard{
+    width: 48%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+ 
+  }
+  .ftrBox{
+    align-items: inherit !important;
+  }
+  .ftrCard:hover img{
+    transform: scale(1.3);
+    /* transform: scale3d(1.05,1.05,1); */
+    /* width: 110%; */
+  }
+  .ftrCard img{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    z-index: 0;
+    opacity: .9;
+    border-radius: 10px;
+    transition: .3s;
+  }
+  .ftrCdBody{
+    position: absolute;
+    z-index: 1;
+    /* padding: 50px; */
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(220, 220, 220, 0.171);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* margin-top: auto; */
+    /* align-items: center; */
+  }
+  .ftrCdBody h3{
+    font-size: 2.3rem;
+    color: white;
+  }
+  .ftrCdBody p{
+    margin: 15px 0px;
+    font-size: 1.1rem;
+    /* color: rgb(48, 47, 47); */
+    color: rgb(240, 239, 239);
+    font-weight: bold;
+  }
+
+
+  @media(max-width:1000px){
+    .ctgCard{
+      width: 110px;
+      height: 110px;
+    }
+    .ctgCard img{
+      height: 65px;
+    }
+    .ctgName{
+      font-size: .7rem;
+    }
+  }
+  @media(max-width:800px){
+    .ftrBox{
+      flex-direction: column;
+    }
+    .ftrCard{
+      width: 100%;
+      margin: 10px 0px;
+    }
+    .ctgBox{
+      flex-wrap: wrap;
+    }
+    .ctgCard{
+      margin: 10px;
+    }
+    .bannerContainer .swiper-slide img {
+      height: 200px;
+    }
+  }
+
+  @media(max-width:500px){
+    .bannerContainer .swiper-slide img{
+      object-fit: inherit;
+    }
+  }

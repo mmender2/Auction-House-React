@@ -1,0 +1,23 @@
+
+.searchBarContent{
+    max-width: 1300px ;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.searchbrBox{
+    width: 100%;
+    margin-top: 30px;
+}
+.priceRange{
+    width: 40%;
+}
+
+.minMaxPr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.minMaxPr span{
+    font-size: .8rem;
+}

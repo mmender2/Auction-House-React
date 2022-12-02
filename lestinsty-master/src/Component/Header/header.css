@@ -1,0 +1,39 @@
+.headLink {
+  text-decoration: none;
+  color: rgb(31, 30, 30);
+  margin: 0px 15px;
+  font-weight: 700;
+  padding: 10px 5px;
+}
+.headLink:nth-of-type(1) {
+  margin-left: 0px;
+}
+
+.activeLink {
+  border-bottom: 2px solid var(--red);
+  /* border-radius: 10px; */
+  color: var(--red) !important;
+}
+
+@media (max-width: 600px) {
+  .mobViewNavLinks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%; */
+  }
+  .headLink {
+    width: 100%;
+    margin: 2px 0px;
+    padding: 15px;
+  }
+  .MuiDrawer-paper {
+    border-right: 4px solid var(--red);
+  }
+  .activeLink {
+    border: none;
+  }
+}

@@ -1,0 +1,7 @@
+
+.alrtContainer{
+    position: fixed;
+    z-index: 99;
+    top: 100px;
+    right: 50px;
+}

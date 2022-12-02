@@ -1,0 +1,59 @@
+
+.MuiCardMedia-root{
+    /* object-fit: contain !important; */
+}
+.MuiCardContent-root{
+    padding-bottom: 0px !important;
+}
+.cardContent{
+    /* border-left: 5px solid var(--red) !important; */
+}
+.csCdImg{
+    /* background-color: rgba(0, 0, 0, 0.74); */
+    /* color: rgb(238, 235, 235); */
+}
+.MuiCard-root{
+    box-shadow:  0px 0px 5px rgb(235, 234, 234) !important;
+}
+.timerBox{
+    display: flex;
+    justify-content: center;
+}
+.tmEle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid var(--red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 8px;
+    /* margin-bottom: 0px; */
+}
+
+.timeLabel{
+    font-size: .7rem;
+    margin-top: 5px;
+
+    font-weight: bold;
+}
+
+@media(max-width:600px){
+    .tmEle{
+        width: 30px;
+        height: 30px;
+    }
+    .MuiCardMedia-root{
+        height: 160px;
+    }
+    .cardBdBtn{
+        font-size: .75rem !important;
+    }
+    .bdPrice{
+        font-size: .7rem !important;
+    }
+    .cardContent{
+        padding: 6px !important;
+    }
+}

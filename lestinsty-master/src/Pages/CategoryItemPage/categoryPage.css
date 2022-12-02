@@ -1,0 +1,19 @@
+.ctgItmPgContent{
+    max-width: 1300px;
+    margin: 0px auto;
+    margin-top: 70px;
+}
+
+
+@media(max-width:600px){
+    .searchbrBox{
+        flex-direction: column-reverse;
+    }
+    .searchbrBox .MuiFormControl-root{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .priceRange{
+        width: 100%;
+    }
+}
