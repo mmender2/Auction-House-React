@@ -64,7 +64,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="legal">
-          <p>Copyright © 2022, All Right Reserved Smash Code</p>
+          <p></p>
           {/* <div className="legal__links">
             <span>
               Made with <span className="heart">♥</span> remotely from Anywhere
